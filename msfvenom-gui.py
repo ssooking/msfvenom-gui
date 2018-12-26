@@ -272,7 +272,7 @@ class Mywindow(QWidget,Ui_Form):
                 _f=open(file_name,'w')    
         except :
             pass
-        self.msfvenom_command = self.msfvenom_command + " -o" + file_name
+        self.msfvenom_command = self.msfvenom_command + " > " + file_name
         
         # debug infomation
         print(self.msfvenom_command)
