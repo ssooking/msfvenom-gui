@@ -278,7 +278,7 @@ class Mywindow(QWidget,Ui_Form):
         print(self.msfvenom_command)
         print(self.p_payload)
         print(self.LHOST,self.LPORT)
-        print(self.RHOST,RPORT)
+        print(self.RHOST,self.RPORT)
 
         QMessageBox.about(self,"正在生成",  "请确认生成payload,并等待成功提示...") 
         if os.system(self.msfvenom_command) == 0:
